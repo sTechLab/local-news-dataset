@@ -5,8 +5,14 @@ We additionally expanded this dataset with two implicitly-constructed metrics. T
 
 This dataset can be used to analyze content of local news outlets in the U.S. at large scales. We encourage researchers to make use of Twitter and Facebook APIs to retrieve local news social media content.
 
+# Interact with the Data
+For an interactive look at the dataset, please go to our [interactive website](https://share.streamlit.io/stechlab/local-news-website/main/app.py?page=Explore+The+Dataset).
 
-## What do the columns mean?
+# Methodology
+
+For information about how this dataset was constructed, you can refer to our [our original paper](https://mariannealq.com/wp-content/uploads/2022/05/Local_News_ICWSM_Camera_Ready.pdf) which explains the main methodology.
+
+# What do the columns mean?
 | Field                   | Description                                                                                                                                                                                                   | N Unique Values |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
 | OutletId                | Unique local news outlet ID of this dataset (from 0 to 10256)                                                                                                                                                 | 10257           |
@@ -22,7 +28,7 @@ This dataset can be used to analyze content of local news outlets in the U.S. at
 | TwitterFollowersCount   | Number of Twitter followers at the time of TwitterRetrievedDate                                                                                                                                               | 5645            |
 | TwitterDescription      | Text of this user's profile description, also known as bio                                                                                                                                                    | 5323            |
 | TwitterRetrievedDate    | Datetime of Twitter fields retrieval (from 2020-10-19 to 2022-05-24)                                                                                                                                          | 5645            |
-| FacebookId              | Unique identifier of Facebook account, also known as platformId on CrowdTangle                                                                                                                                | 9231            |
+| FacebookId              | Unique identifier of Facebook account, also known as platformId on CrowdTangle (Facebook's API). Any Facebook Page can be accessed through the url www.facebook.com/FacebookId                                                                                                                                | 9231            |
 | FacebookSubscriberCount | Number of followers the Facebook account has                                                                                                                                                                  | 9231            |
 | FacebookCategories      | List of Facebook page categories, including Newspaper, News Media Website, Media/News Company, Broadcasting Media Production Company, or Magazine.                                                            | 6900            |
 | FacebookPageDescription | Description of the Facebook page                                                                                                                                                                              | 9189            |
@@ -30,3 +36,11 @@ This dataset can be used to analyze content of local news outlets in the U.S. at
 | FacebookRetrievedDate   | Date of Facebook fields retrieval (from 2020-09-29 to 2020-10-19)                                                                                                                                             | 9231            |
 | PopulationReach         | A metric we calculated based on the geographic dispersion of its Twitter followers, available if a Twitter account is found                                                                                   | 2780            |
 | ContentNetworkNeighbors | A metric we calculated based on how many other Facebook pages the outlet is sharing posts with, available if a Facebook page is found and has posted at least once between January 1st 2020 and July 1st 2021 | 8751            |
+
+# Contact
+If there's anything you'd like to discuss, if there are any issues with the dataset, or if you have any questions, please contact Marianne Aubin Le Quere on [Twitter](https://twitter.com/marianneaubin). We're also always looking for additional collaborators on projects -- feel free to reach out!
+
+# Citation
+To cite this dataset, please refer to the original paper:
+> [Understanding Local News Social Coverage and Engagement at Scale during the COVID-19 Pandemic](https://mariannealq.com/wp-content/uploads/2022/05/Local_News_ICWSM_Camera_Ready.pdf), Marianne Aubin Le Quéré, Ting-Wei Chiang, Mor Naaman, Sixteenth International AAAI Conference on Web and Social Media, 2022.
+
